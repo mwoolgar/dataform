@@ -6,6 +6,6 @@ SELECT
   fruit,
   SUM(count) AS count
 FROM
-  ${ref("quickstart-source")}
+  ${ref("quickstart-source_1")}
 GROUP BY
   1
