@@ -1,1 +1,7 @@
-Hello world
+config {
+    type: "view"
+}
+
+SELECT
+  "test1" AS test_name,
+  "test2 id" AS test_id
