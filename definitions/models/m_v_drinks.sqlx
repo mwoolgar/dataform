@@ -1,0 +1,12 @@
+config {
+    type: "view",
+    materialized: true,
+    schema: "raw",
+    tags: ["weekly"]
+}
+SELECT 
+    DISTINCT drink_id,
+    drink_name,
+    drink_type,
+
+FROM  ${ref("drinks")}

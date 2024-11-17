@@ -1,0 +1,8 @@
+config {
+    type: "view",
+    materialized: true,
+    schema: "raw"
+}
+SELECT * 
+FROM ${ref("meals")}
+    

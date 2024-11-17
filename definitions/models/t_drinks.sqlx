@@ -1,0 +1,16 @@
+config {
+  type: "table",
+  schema: "dataform",
+  tags:"daily",
+   assertions: {
+    uniqueKey: ["drink_id"],
+    nonNull: ["drink_id", "drink_name"],
+    rowConditions: [
+      'date >= "2014-05-01"',
+      'calories < 500'
+    ]
+}
+}
+SELECT *
+
+FROM  ${ref("drinks")}

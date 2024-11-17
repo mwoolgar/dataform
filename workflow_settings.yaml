@@ -1,5 +1,0 @@
-defaultProject: dataform-441212
-defaultLocation: EU
-defaultDataset: raw
-defaultAssertionDataset: dataform_assertions
-dataformCoreVersion: 3.0.0
